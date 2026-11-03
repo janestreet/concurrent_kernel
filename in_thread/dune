@@ -1,0 +1,6 @@
+(library
+ (name concurrent_in_thread)
+ (public_name concurrent_kernel.in_thread)
+ (libraries await base concurrent_kernel threads)
+ (preprocess
+  (pps ppx_debug_assert ppx_jane -compare-require-explicit-locality)))
